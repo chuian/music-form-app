@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Music Form App</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="card">
+  <h1>Music Form</h1>
+  <form id="musicForm">
+    <label>Name
+      <input id="name" required />
+    </label>
+    <label>Genre
+      <select id="genre" required>
+        <option value="">Select genre</option>
+        <option>Pop</option>
+        <option>Rock</option>
+        <option>Hip-hop</option>
+        <option>Jazz</option>
+        <option>Classical</option>
+      </select>
+    </label>
+    <label>Mood
+      <input id="mood" required />
+    </label>
+    <label>Vibe
+      <input id="vibe" required />
+    </label>
+    <label>Intended loudness
+      <select id="loudness" required>
+        <option value="">Select</option>
+        <option>Quiet</option>
+        <option>Medium</option>
+        <option>Loud</option>
+      </select>
+    </label>
+    <label>Favorite track of all time
+      <input id="favoriteTrack" required />
+    </label>
+    <div class="buttons">
+      <button type="submit">Submit</button>
+      <button type="button" id="loadBtn">Load Data</button>
+    </div>
+  </form>
+
+  <section>
+    <h2>Saved Entries</h2>
+    <div id="tableWrap">
+      <table id="userTable">
+        <thead><tr><th>Name</th><th>Genre</th><th>Mood</th><th>Vibe</th><th>Loudness</th><th>Favorite Track</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
